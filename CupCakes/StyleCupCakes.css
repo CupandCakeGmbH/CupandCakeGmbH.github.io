@@ -1,0 +1,183 @@
+.CupCake{
+    display: grid;
+    grid-template-columns: 4.25fr 5.75fr;
+    width: 100%;
+    gap: 2rem;
+    align-items: stretch;
+    justify-items: start;
+}
+
+.CupCakeImg {
+    height: 100%;
+}
+
+.CupCakeImg img {
+    width: 100%;
+    height: calc(100% - 2rem);
+    object-fit: cover;    
+    border-radius: 20px;
+}
+
+.description {
+    width: 100%;
+    border-radius: 20px;
+    background-color: var(--light-background-color);
+    margin-bottom: 2rem;
+}
+
+.description h1{
+    justify-self: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.description h3{
+    justify-self: start;
+    margin-left: 40px;
+    text-align: left;
+    margin-top: 1rem;
+
+}
+
+.description p{
+    margin: 0 40px;
+    text-align: justify;
+}
+
+.blockIcons{
+    display: flex;
+    gap: 4rem;
+    margin: 0 40px 0 calc(40px + 2rem);
+    flex-wrap: wrap;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    flex-direction: column;
+}
+
+.icon p{
+    margin: 0;
+}
+
+.icon:hover{
+    color: var(--dark-hover-background-color);
+}
+
+.preis{
+    margin-top: 1rem;
+}
+
+.preis h3{
+    display: inline;
+}
+
+.preis p{
+    font-size: 2.074rem;
+    font-family: "dancing script";
+    color: var(--dark-hover-background-color);
+    display: inline;
+}
+
+.buy{
+    margin: 2rem 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.BuyNow{
+    padding: 0.75rem 4rem;
+    background-color: var(--dark-background-color);
+    border-radius: 20px;
+    margin: 0 0.5rem;
+    font-family: "dancing script";
+    font-size: 2.074rem;
+    transition: all 300ms linear;
+    width: fit-content;
+}
+
+.BuyNow:hover, .BuyNow:focus-visible{
+    background-color: var(--dark-hover-background-color);
+    color: var(--custom-white);
+    box-shadow: 0 4px 4px var(--twentfife-dark-hover-background-color);
+    transition: all 300ms linear;
+}
+.browseOther{
+    margin-top: 0.5rem;
+    border-bottom: 1.5px solid var(--light-background-color);
+}
+
+.browseOther:hover, .browseOther:focus-visible{
+    color: var(--dark-hover-background-color);
+    transition: var(--custom-transition);
+    border-bottom: 1.5px solid;
+    border-image: linear-gradient(to right, var(--zero-dark-background-color) 0%, var(--dark-background-color) 10%, var(--dark-background-color) 90%, var(--zero-dark-background-color) 100%);
+    border-image-slice: 1;
+
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;  
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 150px;
+  background-color: var(--dark-background-color);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  left: 90%;
+  top: 0.5rem;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+#zitrone img{
+    object-position: 37% center;
+}
+
+#brombeerLimette img{
+    object-position: 49% center;
+}
+
+#heidelbeere img{
+    object-position: 40% center;
+}
+
+#kokus img{
+    object-position: 42.5% center;
+}
+
+#redVelvet img,
+#saltedCaramell img,
+#schoko img,
+#banane img {
+    object-position: 47% center;
+}
+
+#schokoMousse img, #schokoOrange img{
+    object-position: 43% center;
+}
+
+#tiramisu img{
+    object-position: 41% center;
+}
+
+#vanille img{
+    object-position: 47.5% center;
+}
+
+#vanilleKipferl img,
+#weißeSchoko img{
+    object-position: 46% center;
+}

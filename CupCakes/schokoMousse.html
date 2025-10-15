@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="DE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schoko-Mousse Cupcake</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="StyleCupCakes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a onclick="openMenu('menuCupCake')">Cupcakes</a></li>
+                <li><a href="https://cupcakes-wien.at/" target="_blank">Partner</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a onclick="openMenu('menuAboutUs')">About Us</a></li>
+                <li><a onclick="openMenu('menuTeam')">Team</a></li>
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+            <div class="language-select" id="langSelect">
+                <div class="lang-btn" id="langBtn">
+                    <span id="currentLang">DE</span>
+                    <span class="arrow" id="arrow">
+                        <svg id="arrowLeft" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                            <path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/>
+                        </svg>
+                        <svg id="arrowDown" style="display: none;" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                            <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/>
+                        </svg>
+                    </span>
+                </div>
+                <div class="dropdown" id="dropdown">
+                    <div data-lang="en">EN</div>
+                </div>
+            </div>
+        </nav>
+
+        <div id="overlay" onclick="closeMenu()"></div>
+
+        <!-- CupCakes -->
+        <div id="menuCupCake" class="sidenav">
+            <div class="menu-header">
+                <a class="closebtn" href="javascript:void(0)" onclick="closeMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="currentColor">
+                        <path d="m256-200-56-56 224-224-224-224 56-56 
+                        224 224 224-224 56 56-224 224 
+                        224 224-56 56-224-224-224 224Z"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="sidenav-inner">
+                <a href="CupCakeOverfew.html" class="title">Cup Cakes</a>
+                <!-- klassiker -->
+                <a href="CupCakeOverfew.html#klassiker" class="subtitle">Klassische</a>
+                <a href="schoko.html">Schoko</a>
+                <a href="vanille.html">Vanille</a>
+                <a href="weißeSchoko.html">Weiße Schoko</a>
+                <a href="schokoMousse.html">Schoko-Mousse</a>
+                <a href="schokoOrange.html">Schoko-Orange</a>
+                <!-- ausgefallene -->
+                <a href="CupCakeOverfew.html#ausgefallen" class="subtitle">Ausgefallene</a>
+                <a href="redVelvet.html">Red Velvet</a>
+                <a href="saltedCaramell.html">Salted Caramel</a>
+                <a href="vanilleKipferl.html">Vanille Kipferl</a>
+                <a href="cheesecake.html">Cheesecake</a>
+                <a href="oreo.html">Oreo</a>
+                <!-- fruchtig -->
+                <a href="CupCakeOverfew.html#fruchtig" class="subtitle">Fruchtige</a>
+                <a href="Bananen.html">Bananen</a>
+                <a href="zitrone.html">Zitronen</a>
+                <a href="heidelbeere.html">Heidelbeere</a>
+                <a href="mango.html">Mango</a>
+                <a href="Ananas.html">Ananas</a>
+                <!-- spezielle -->
+                <a href="CupCakeOverfew.html#spezielle" class="subtitle">Spezielle Diäten</a>
+                <a href="tiramisu.html">Tiramisu</a>
+                <a href="brombeerLimette.html">Brombeer-Limetten</a>
+                <a href="kokusStracciatella.html">Kokos-Stracciatella</a>
+                <a href="pinaColada.html">Pina Colada</a>
+            </div>
+        </div>
+
+        <!-- About Us -->
+        <div id="menuAboutUs" class="sidenav">
+            <div class="menu-header">
+                <a class="closebtn" href="javascript:void(0)" onclick="closeMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="currentColor">
+                        <path d="m256-200-56-56 224-224-224-224 56-56 
+                        224 224 224-224 56 56-224 224 
+                        224 224-56 56-224-224-224 224Z"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="sidenav-inner">
+                <a href="../AboutUS/aboutUs.html" class="title">About Us</a>
+                <a href="../AboutUS/AGB.html">AGB</a>
+                <a href="../AboutUS/allergene.html">Allergene</a>
+                <a href="../AboutUS/balancedScorecard.html">Balanced Scorecard</a>
+                <a href="../AboutUS/businessProfile.html">Business Profile</a>
+                <a href="../AboutUS/events.html">Events</a>
+                <a href="../AboutUS/impressum.html">Impressum</a>
+                <a href="../AboutUS/leitbild.html">Leitbild</a>
+            </div>
+        </div>
+
+        <!-- Team -->
+        <div id="menuTeam" class="sidenav">
+            <div class="menu-header">
+                <a class="closebtn" href="javascript:void(0)" onclick="closeMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="currentColor">
+                        <path d="m256-200-56-56 224-224-224-224 56-56 
+                        224 224 224-224 56 56-224 224 
+                        224 224-56 56-224-224-224 224Z"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="sidenav-inner">
+                <a href="../team/teamOverfew.html" class="title">Team</a>
+                <a href="../team/teamOverfew.html">Geschäftsführung</a>
+                <a href="../team/teamOverfew.html">Einkauf</a>
+                <a href="../team/teamOverfew.html">International</a>
+                <a href="../team/teamOverfew.html">IT</a>
+                <a href="../team/teamOverfew.html">Marketing</a>
+                <a href="../team/teamOverfew.html">Office</a>
+                <a href="../team/teamOverfew.html">Personal</a>
+                <a href="../team/teamOverfew.html">UNCO</a>
+                <a href="../team/teamOverfew.html">Verkauf</a>                
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <button id="backToTop" title="Nach oben">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                <path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"/>
+            </svg>
+        </button>
+        <section class="CupCake">
+            <div class="CupCakeImg" id="schokoMousse">
+                <img src="../Bilder/schoko-mousse.webp" alt="Schoko-Mousse Cupcake">
+            </div>
+            <div class="description">
+                <h1>Schoko-Mousse Cupcake</h1>
+                <h3>Beschreibung:</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                </p>
+                <h3>Allergene:</h3>
+                    <div class="blockIcons">
+                        <a class="icon gluten" href="../AboutUS/allergene.html#gluten">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M33.4125 2.88755C30.525 6.26255 29.55 10.875 30.9 14.5875C31.3875 15.975 31.425 16.6125 31.05 18.8251L30.6375 21.4875L30.15 19.9501C29.5125 17.7375 27.675 15.4125 25.275 13.7626C24.1125 13.0126 23.0625 12.375 22.875 12.375C22.725 12.375 22.5 13.0875 22.3875 13.9501C21.7875 18.375 24.45 23.625 28.8 26.6625C29.625 27.2625 29.625 27.3375 29.2125 30L28.7625 32.7L28.0875 30.9C27.15 28.425 25.4625 26.4375 23.1 25.125C20.4 23.55 20.25 23.625 20.25 26.175C20.25 30.5625 22.125 34.125 25.8375 36.8625L27.9375 38.4375L27.6375 40.3126C27.15 43.3501 27.0375 43.3876 25.9125 41.0251C25.3125 39.8251 24.2625 38.2875 23.5875 37.6125C22.2 36.3 19.1625 34.8 18.6375 35.1376C18.4125 35.25 18.375 36.4875 18.4875 37.9501C18.8625 42.3375 21.15 46.2001 24.6375 48.2626C25.7625 48.9001 26.2125 49.3876 26.1 49.8376C26.025 50.1751 25.65 52.0876 25.275 54.1126C24.7125 57.4126 24.7125 57.8626 25.2375 58.3876C25.65 58.8001 25.95 58.8376 26.55 58.5376C27.15 58.2376 27.4125 57.3376 27.9375 53.8501L28.6125 49.5751L30.075 49.3501C32.175 49.0126 35.7375 47.1376 37.35 45.4876C38.7 44.1376 40.2 41.3625 40.725 39.225L40.9875 38.175L38.9625 38.4375C35.8875 38.8125 32.5125 40.5751 31.0875 42.5626C30.4125 43.5001 29.8125 44.2501 29.7 44.2501C29.475 44.2501 30.0375 40.4625 30.4125 39.525C30.5625 39.0751 31.1625 38.5875 31.725 38.475C36.9 37.1625 41.025 33.1875 42.15 28.3875C42.375 27.4125 42.3375 27.375 40.95 27.375C37.7625 27.375 34.4625 29.25 32.175 32.4L31.05 33.9375L31.3125 32.4375C32.1 27.6 32.175 27.375 32.85 27.375C33.975 27.375 38.025 25.4625 39.6 24.1875C41.2875 22.8 43.2375 19.3125 43.65 16.9501C43.8375 15.8251 43.8 15.75 42.7875 15.75C40.05 15.75 36.3375 17.85 34.2375 20.625C32.9625 22.2375 32.925 22.275 33.15 21.1875C33.2625 20.55 33.45 19.3876 33.6 18.6C33.75 17.775 34.425 16.3876 35.1 15.4875C36.825 13.2001 37.65 10.2375 37.3875 7.23755C37.1625 4.95005 35.8125 1.12505 35.25 1.12505C35.0625 1.12505 34.2375 1.91255 33.4125 2.88755Z" fill="currentColor"/>
+                            </svg>
+                            <p>Gluten (A)</p>
+                        </a>
+                        <a class="icon eier" href="../AboutUS/allergene.html#eier">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M26.597 1.97018C21.7612 3.53735 17.1941 8.3284 13.6567 15.4478C10.4776 21.8956 9.00002 27.403 8.64181 34.0299C8.46271 37.9702 8.55226 39.8508 9.08957 41.9553C11.6418 51.806 19.6567 58.209 29.5523 58.2985C42.403 58.4776 51.8955 48.9403 51.9403 35.7762C51.9403 29.4179 49.1642 19.3881 45.6269 13.1642C43.209 8.86571 39.0896 4.5672 35.8657 2.91048C32.9552 1.47765 29.2836 1.07467 26.597 1.97018ZM34.7463 6.22392C40.3433 9.4478 45.1344 17.4627 47.4627 27.4478C48.2687 30.8508 48.403 32.7314 48.3135 36.6269C48.1344 41.1941 48 41.6866 46.4329 44.8657C44.5075 48.8508 41.4179 51.8956 37.612 53.6866C35.4179 54.7165 34.5672 54.8508 30.2239 54.8508C25.7911 54.8508 25.0299 54.7165 22.7015 53.6418C19.3433 52.0747 15.4478 48.3135 13.8358 45.1344C10.6567 38.8657 11.2836 29.1941 15.5373 19.0747C17.9552 13.2985 22.9702 7.11944 26.5075 5.59705C29.0149 4.52242 32.1493 4.7463 34.7463 6.22392Z" fill="currentColor"/>
+                            </svg>
+                            <p>Eier (C)</p>
+                        </a>
+                        <a class="icon milch" href="../AboutUS/allergene.html#milch">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.0588 2.73533C18.75 3.04416 18.5294 4.63239 18.5294 6.79416V10.2794L15.2206 14.8677L11.9117 19.4559V38.8236C11.9117 56.0295 12 58.1912 12.6176 58.4118C13.0147 58.5442 21.3088 58.6765 31.0588 58.6765C44.25 58.6765 48.9264 58.5442 49.3235 58.1471C49.7206 57.75 49.8529 52.9412 49.8529 39.1324V20.6471L46.7647 15.4853L43.6765 10.3236V6.97063C43.6765 5.11768 43.5441 3.30886 43.4117 2.9118C43.1912 2.29416 41.6912 2.20592 31.3676 2.20592C22.8088 2.20592 19.4559 2.33827 19.0588 2.73533ZM40.5882 7.27945V9.26474H31.3235H22.0588V7.27945V5.29416H31.3235H40.5882V7.27945ZM38.8235 12.6618C38.8235 12.8383 38.0294 14.2942 37.0588 15.9706L35.25 18.9706H26.0294C20.9117 18.9706 16.7647 18.8383 16.7647 18.7059C16.7647 18.4853 17.1617 17.8677 20.0294 13.9853L21.2206 12.353H30.0441C34.8529 12.353 38.8235 12.4853 38.8235 12.6618ZM44.5147 18.2647L46.7647 21.9706V38.5589V55.1471H42.3529H37.9412V38.1618V21.2206L39.2206 19.0147C40.897 16.2353 41.9559 14.5589 42.1323 14.5589C42.2206 14.5589 43.2794 16.2353 44.5147 18.2647ZM34.4117 38.603V55.1471H24.7059H15V38.603V22.0589H24.7059H34.4117V38.603Z" fill="currentColor"/>
+                            </svg>
+                            <p>Milch (G)</p>
+                        </a>
+                    </div>
+                
+                <div class="preis">
+                    <h3>Preis:</h3>
+                    <div class="tooltip">
+                        <p>5,90 Euro</p>
+                        <span class="tooltiptext">Preis exkl. USt.</span>
+                    </div>
+                </div>
+
+                <div class="buy">
+                    <a href="" class="BuyNow">Jetzt Kaufen</a>
+                    <a href="CupCakeOverfew.html" class="browseOther">andere Cupcakes entdecken</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h3>Mehr Informationen</h3>
+        <h3>Kontakt</h3>
+        <h3>Sozial Media</h3>
+
+        <!-- Informations -->
+        <section class="footer_infos">
+            <a href="../AboutUS/aboutUs.html">About Us</a>
+            <a href="../AboutUS/allergene.html">Allergene</a>
+            <a href="../AboutUS/allergene.html">AGB</a>
+            <a href="CupCakeOverfew.html">Cupcakes</a>
+            <a href="../AboutUS/impressum.html">Impressum</a>
+            <a href="https://cupcakes-wien.at/" target="_blank">Partner</a>
+            <a href="">Shop</a>
+            <a href="../team/teamOverfew.html">Team</a>
+       </section>
+
+       <!-- Contact -->
+       <section class="footer_contact">
+        <!-- Address -->
+        <a href="https://maps.app.goo.gl/PSHRsao1yR1T1EKo7" target="_blank">
+            <svg width="24" height="30" viewBox="0 0 24 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 15C12.825 15 13.5313 14.7063 14.1188 14.1188C14.7063 13.5313 15 12.825 15 12C15 11.175 14.7063 10.4688 14.1188 9.88125C13.5313 9.29375 12.825 9 12 9C11.175 9 10.4688 9.29375 9.88125 9.88125C9.29375 10.4688 9 11.175 9 12C9 12.825 9.29375 13.5313 9.88125 14.1188C10.4688 14.7063 11.175 15 12 15ZM12 26.025C15.05 23.225 17.3125 20.6813 18.7875 18.3938C20.2625 16.1063 21 14.075 21 12.3C21 9.575 20.1313 7.34375 18.3938 5.60625C16.6562 3.86875 14.525 3 12 3C9.475 3 7.34375 3.86875 5.60625 5.60625C3.86875 7.34375 3 9.575 3 12.3C3 14.075 3.7375 16.1063 5.2125 18.3938C6.6875 20.6813 8.95 23.225 12 26.025ZM12 30C7.975 26.575 4.96875 23.3938 2.98125 20.4563C0.99375 17.5188 0 14.8 0 12.3C0 8.55 1.20625 5.5625 3.61875 3.3375C6.03125 1.1125 8.825 0 12 0C15.175 0 17.9688 1.1125 20.3813 3.3375C22.7938 5.5625 24 8.55 24 12.3C24 14.8 23.0063 17.5188 21.0188 20.4563C19.0312 23.3938 16.025 26.575 12 30Z" fill="currentColor"/>
+            </svg> 
+            Schönborngasse 3-5, 1080 Wien
+        </a>
+        
+        <!-- Phone -->
+        <a href="tel:+4314064514;ext=7361">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M28.25 30C24.7778 30 21.3472 29.2431 17.9583 27.7292C14.5694 26.2153 11.4861 24.0694 8.70833 21.2917C5.93056 18.5139 3.78472 15.4306 2.27083 12.0417C0.756945 8.65278 0 5.22222 0 1.75C0 1.25 0.166667 0.833333 0.5 0.5C0.833333 0.166667 1.25 0 1.75 0H8.5C8.88889 0 9.23611 0.131944 9.54167 0.395833C9.84722 0.659722 10.0278 0.972222 10.0833 1.33333L11.1667 7.16667C11.2222 7.61111 11.2083 7.98611 11.125 8.29167C11.0417 8.59722 10.8889 8.86111 10.6667 9.08333L6.625 13.1667C7.18056 14.1944 7.84028 15.1875 8.60417 16.1458C9.36806 17.1042 10.2083 18.0278 11.125 18.9167C11.9861 19.7778 12.8889 20.5764 13.8333 21.3125C14.7778 22.0486 15.7778 22.7222 16.8333 23.3333L20.75 19.4167C21 19.1667 21.3264 18.9792 21.7292 18.8542C22.1319 18.7292 22.5278 18.6944 22.9167 18.75L28.6667 19.9167C29.0556 20.0278 29.375 20.2292 29.625 20.5208C29.875 20.8125 30 21.1389 30 21.5V28.25C30 28.75 29.8333 29.1667 29.5 29.5C29.1667 29.8333 28.75 30 28.25 30ZM5.04167 10L7.79167 7.25L7.08333 3.33333H3.375C3.51389 4.47222 3.70833 5.59722 3.95833 6.70833C4.20833 7.81944 4.56944 8.91667 5.04167 10ZM19.9583 24.9167C21.0417 25.3889 22.1458 25.7639 23.2708 26.0417C24.3958 26.3194 25.5278 26.5 26.6667 26.5833V22.9167L22.75 22.125L19.9583 24.9167Z" fill="currentColor"/>
+                </svg>
+                01/4064514-7361
+            </a>
+        
+        <!-- Email -->
+        <a href="mailto:cupandcake851@uebungsfirmen.at">
+            <svg width="38" height="31" viewBox="0 0 38 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.78507 30.6897C2.74417 30.6897 1.85311 30.3141 1.11186 29.5629C0.370621 28.8116 0 27.9085 0 26.8535V3.83622C0 2.78126 0.370621 1.87815 1.11186 1.12689C1.85311 0.37563 2.74417 0 3.78507 0H34.0656C35.1065 0 35.9976 0.37563 36.7388 1.12689C37.4801 1.87815 37.8507 2.78126 37.8507 3.83622V26.8535C37.8507 27.9085 37.4801 28.8116 36.7388 29.5629C35.9976 30.3141 35.1065 30.6897 34.0656 30.6897H3.78507ZM18.9253 17.263L3.78507 7.67244V26.8535H34.0656V7.67244L18.9253 17.263ZM18.9253 13.4268L34.0656 3.83622H3.78507L18.9253 13.4268ZM3.78507 7.67244V3.83622V26.8535V7.67244Z" fill="currentColor"/>
+                </svg> 
+            cupandcake851@uebungsfirmen.at
+        </a>
+       </section>
+
+       <!-- Sozial Media -->
+       <section class="footer_sozial">
+        <!-- Insta -->
+        <a href="https://www.instagram.com/uefa.cupcake/" target="_blank">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_77_1154)">
+                <path d="M9.42773 0.0585938C7.49414 0.140625 6.16992 0.386719 5.05078 0.867188C4.00195 1.31836 3.38086 1.73438 2.60742 2.50195C1.56445 3.53906 0.914062 4.70508 0.503906 6.26953C0.140625 7.65234 0.0585938 9.24023 0.0585938 15C0.0585938 20.666 0.134766 22.2715 0.474609 23.6543C1.31836 27.0938 3.83789 29.2852 7.54688 29.7949C8.60742 29.9355 10.834 30 15.0879 30C19.043 30 21.3223 29.9414 22.3477 29.8184C24.4453 29.5723 26.0859 28.8457 27.3809 27.6035C28.8398 26.1973 29.6133 24.5156 29.8945 22.1191C30.0059 21.1816 30.0059 8.67773 29.8945 7.79297C29.666 6 29.1328 4.52344 28.2891 3.39258C27.873 2.83008 26.9824 1.98047 26.4258 1.59961C25.166 0.75 23.6484 0.28125 21.6504 0.111328C20.707 0.0351562 11.0273 -0.00585938 9.42773 0.0585938ZM22.1016 2.88867C23.7715 3.13477 24.709 3.55078 25.6113 4.44727C26.1973 5.0332 26.5195 5.54883 26.8066 6.3457C27.2871 7.69336 27.334 8.4082 27.334 15.0293C27.334 18.8438 27.3105 20.6777 27.2578 21.293C27.0879 23.3262 26.6836 24.4219 25.7344 25.4355C24.7441 26.4902 23.5078 27.0117 21.5918 27.1875C20.5547 27.2871 11.9824 27.334 10.0078 27.252C9.11719 27.2168 8.18555 27.1582 7.93359 27.123C6.82617 26.9707 5.75391 26.5781 5.08594 26.0918C4.66992 25.7812 4.00195 25.0547 3.75586 24.6445C3.26367 23.8242 2.9707 22.6699 2.87109 21.2051C2.69531 18.5449 2.75391 9.41602 2.95312 7.9043C3.16406 6.33984 3.65039 5.28516 4.57031 4.39453C5.57812 3.41602 6.90234 2.94141 8.95312 2.8125C9.39844 2.78906 12.3926 2.77148 15.6152 2.7832C20.6133 2.79492 21.5684 2.80664 22.1016 2.88867Z" fill="currentColor"/>
+                <path d="M22.2773 5.39062C21.6152 5.72461 21.2988 6.24023 21.2988 7.00195C21.2988 7.55273 21.4277 7.88086 21.8027 8.25586C22.1777 8.625 22.5059 8.75977 23.0566 8.75977C23.4492 8.75977 23.5781 8.73633 23.8594 8.5957C24.4512 8.30273 24.7852 7.79297 24.832 7.11328C24.873 6.50977 24.7383 6.1582 24.3223 5.73633C23.9355 5.34961 23.5957 5.21484 23.0273 5.21484C22.7109 5.21484 22.5703 5.25 22.2773 5.39062Z" fill="currentColor"/>
+                <path d="M13.6875 7.41807C12.1465 7.69932 10.7812 8.42002 9.63281 9.57432C8.10938 11.0919 7.37695 12.8673 7.37695 15.0001C7.37695 16.2892 7.61719 17.3497 8.15039 18.4161C9.79102 21.6739 13.4004 23.3439 16.9102 22.4708C18.293 22.1251 19.3594 21.5274 20.3965 20.5255C21.3281 19.6231 21.9551 18.6388 22.3477 17.461C22.6289 16.6114 22.7344 15.9552 22.7344 15.0001C22.7344 14.0509 22.6289 13.3888 22.3535 12.5567C21.9785 11.4317 21.4336 10.5411 20.584 9.66221C19.4238 8.4669 17.9766 7.69346 16.3828 7.41221C15.7324 7.30088 14.3203 7.30088 13.6875 7.41807ZM16.0078 10.1017C18.6914 10.6173 20.4727 13.254 19.957 15.9552C19.6406 17.5899 18.4395 19.0431 16.9043 19.6349C16.1543 19.9278 15.7207 19.9981 14.8535 19.963C14.2383 19.9396 13.998 19.9044 13.5938 19.7755C11.8184 19.213 10.5234 17.7774 10.1602 15.9728C10.0195 15.2755 10.0723 14.1915 10.2832 13.5353C10.834 11.7892 12.3047 10.4591 14.0566 10.1075C14.5781 10.0021 15.4805 10.0021 16.0078 10.1017Z" fill="currentColor"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_77_1154">
+                <rect width="30" height="30" fill="currentColor"/>
+                </clipPath>
+                </defs>
+            </svg>
+            uefa.cupcake
+        </a>
+
+
+            <!-- <a href="">
+            <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.8443 10.2558C13.815 21.2268 13.8502 20.3564 13.3521 21.2859C12.9127 22.1079 12.2506 22.715 11.3658 23.118C10.6217 23.4511 10.2174 23.537 9.37362 23.537C8.55331 23.537 8.13729 23.4511 7.44003 23.1395C6.55526 22.7365 5.84042 22.0864 5.41854 21.2859C5.0787 20.6358 4.98495 20.2651 4.98495 19.5129C4.97909 18.7339 5.07284 18.3739 5.45956 17.6593C5.68807 17.2295 5.81112 17.0737 6.26229 16.6654C6.84237 16.1335 7.37557 15.838 8.14315 15.6177C8.70565 15.4566 9.63729 15.419 10.2232 15.5318C10.4635 15.5801 10.6978 15.6177 10.7389 15.6177C10.7916 15.6177 10.8092 15.1288 10.8092 13.3666V11.1101L10.5338 11.0671C10.3756 11.0456 9.83065 11.0295 9.31503 11.0295C7.80917 11.0349 6.61971 11.282 5.31893 11.8569C0.1744 14.1241 -1.57169 19.8675 1.56307 24.2032C2.10799 24.9554 3.27987 26.0353 4.07088 26.5189C6.5201 28.0071 9.46737 28.3939 12.274 27.588C14.7877 26.8681 17.0318 24.9823 18.0455 22.7473C18.3033 22.167 18.5025 21.5277 18.6373 20.8561C18.731 20.3618 18.7369 19.8997 18.7252 14.93C18.7135 11.9697 18.7252 9.54664 18.7486 9.54664C18.7721 9.54664 18.8892 9.61649 19.0064 9.70245C19.6627 10.1806 20.9986 10.8307 22.0123 11.1799C23.1549 11.5668 24.7721 11.8569 25.8092 11.8569H26.3365L26.3248 9.63798L26.3072 7.42444L25.7389 7.39221C23.9459 7.28476 22.3111 6.59706 20.9693 5.38284C19.6568 4.20085 18.8892 2.68576 18.7428 0.988005L18.7017 0.520584H16.2877H13.8678L13.8443 10.2558Z" fill="currentColor"/>
+            </svg>
+            uefa.cupcake</a>
+
+
+            <a href="">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.25192 0.0585938C2.01559 0.228516 0.960907 0.996094 0.410126 2.13867C-3.05176e-05 2.99414 0.0292664 2.05078 0.0292664 15C0.0292664 27.9492 -3.05176e-05 27.0059 0.410126 27.8613C0.785126 28.6406 1.32419 29.1855 2.08005 29.5664C2.93552 29.9883 2.48434 29.9648 9.07028 29.9824L15 30.0059V24.8438V19.6875H13.125H11.25V17.3438V15H13.1191H14.9941L15.0117 12.6094C15.0351 10.3359 15.041 10.2012 15.1699 9.78516C15.7617 7.81055 17.1855 6.38672 19.1601 5.79492C19.5761 5.66602 19.7109 5.66016 21.9902 5.63672L24.375 5.61914V7.95703V10.3008L22.8398 10.3184C21.4277 10.3418 21.2812 10.3535 21.0996 10.459C20.9883 10.5234 20.8476 10.6523 20.7773 10.7402C20.6601 10.8984 20.6543 10.9805 20.6367 12.9551L20.6191 15H22.9687C25.1894 15 25.3242 15.0059 25.289 15.0996C25.2656 15.1582 24.8496 16.2129 24.3574 17.4434L23.4668 19.6875H22.0488H20.625V24.8496V30.0059L23.748 29.9824C27.1933 29.959 27.1113 29.9648 27.9199 29.5664C28.6758 29.1855 29.2148 28.6406 29.5898 27.8613C30 27.0059 29.9707 27.9492 29.9707 15C29.9707 2.05078 30 2.99414 29.5898 2.13867C29.2148 1.35938 28.6758 0.814453 27.9199 0.433594C27.0351 -0.00585938 28.1894 0.0351562 15.2343 0.0234375C8.83591 0.0175781 3.44528 0.0351562 3.25192 0.0585938Z" fill="currentColor"/>
+                </svg>
+                uefa.cupcake
+            </a> -->
+       </section>
+
+    </footer>
+</body>
+    <script src="../script.js"></script>
+
+</html>

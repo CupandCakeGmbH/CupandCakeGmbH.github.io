@@ -1,0 +1,27 @@
+main li{
+    display: block;
+    text-align: left;
+}
+
+main ul{
+    margin: 1rem 0;
+}
+
+main li p{
+    margin: 0;
+}
+
+p.subtitleAufzaelung{
+    margin-top: 1rem;
+    font-weight: bold;
+    color: var(--dark-hover-background-color);
+}
+
+main h3{
+    width: fit-content;
+    text-align: left;
+    justify-self: left;
+    border-bottom: none;
+    margin-top: 2rem;
+    padding-bottom: 0;
+}

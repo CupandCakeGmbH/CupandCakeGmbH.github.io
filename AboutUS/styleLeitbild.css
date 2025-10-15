@@ -1,0 +1,19 @@
+span{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--dark-hover-background-color);
+}
+
+.erklaerung p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+main h3{
+    width: fit-content;
+    text-align: left;
+    justify-self: left;
+    border-bottom: none;
+    margin-top: 2rem;
+    padding-bottom: 0;
+}

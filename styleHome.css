@@ -1,0 +1,195 @@
+/* Style Slideshow */
+.slideshow-section {
+  position: relative;
+  max-width: 80%;
+  margin: 0 auto 2rem;
+  background-color: var(--light-background-color);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Slideshow Container */
+.slideshow {
+  position: relative;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Aktuelle Slides */
+.slideshow.visible {
+  opacity: 1;
+}
+
+/* Slides */
+.slides {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.slide.is-active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.slide img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Steuerung */
+.slide-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--dark-background-color);
+  color: var(--custom-white);
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  display: block;
+  transition: all 0.3s ease-in-out;
+  display: inline;
+  z-index: 10;
+}
+
+.slide-control:hover {
+  background-color: var(--dark-hover-background-color);
+}
+
+.slide-control.prev { 
+  left: 20px; 
+}
+
+.slide-control.next {
+  right: 20px;
+}
+
+/* Ladeanimation */
+.slideshow-loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  color: var(--font-color);
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+}
+
+.slideshow-loader.hidden {
+  display: none;
+}
+
+.spinner {
+  border: 5px solid var(--dark-background-color);
+  border-top: 5px solid var(--custom-white);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 0.75rem;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Screenreader Text */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+/* Cupcake Vorstellung */
+.cupcakesPresentation{
+  display: flex;
+  margin-bottom: 2rem;
+  justify-content: space-between;
+}
+
+.cupcake{
+  width: 31%;
+  border-radius: 20px 0;
+  background-color: var(--light-background-color);
+}
+
+.cupcake img{
+  width: 100%;
+  border-radius: 20px 0 0 0;
+  object-fit: cover;    
+}
+
+.cupcake h2{
+  margin: 0 auto;
+}
+
+.cupcake .text{
+  margin: 0 20px;
+  text-align: justify;
+}
+
+.mehrErfahren{
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-bottom: 0.5rem;
+}
+
+.mehrErfahren:hover, .mehrErfahren:focus{
+  color: var(--dark-hover-background-color);
+  transition: var(--custom-transition);
+}
+
+.aboutUS{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 2rem;
+  align-items: stretch;
+  margin-bottom: 2rem;
+}
+
+.aboutUSText{
+  background-color: var(--light-background-color);
+  border-radius: 20px;
+  padding: 0 40px;
+}
+
+.aboutUS .line{
+  margin: 0;
+}
+
+.aboutUS h1{
+  margin: 0 0 1rem;
+}
+
+.aboutUS p{
+  margin: 1rem 0;
+  text-align: justify;
+}
+
+.aboutUS img{
+  width: calc(100% - 2rem);
+  height: 100%;
+  object-fit: cover;    
+  border-radius: 20px;
+}

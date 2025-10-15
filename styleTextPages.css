@@ -1,0 +1,26 @@
+main{
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+p{
+    margin-left: 2rem;
+}
+
+a:hover{
+    color: var(--dark-hover-background-color);
+    transition: var(--custom-transition);
+}
+
+h1{
+    margin: 0 auto;
+}
+
+.disclaimer{
+    margin-left: 0;
+    font-size: 1.2rem;
+}
+
+ul{
+    margin: 1rem 0;
+}
