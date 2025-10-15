@@ -1,7 +1,5 @@
     const slides = [
       { src: "Bilder/oreo.webp", alt: "Slide 1" },
-      { src: "Bilder/Brombeer Limette.webp", alt: "Slide 2" },
-      { src: "Bilder/Heidelbeer about.webp", alt: "Slide 3" },
       { src: "Bilder/Kokus.webp", alt: "Slide 4" }
     ];
         const INTERVAL_MS = 8000; // Zeit zwischen Slides
