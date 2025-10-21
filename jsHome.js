@@ -1,6 +1,6 @@
     const slides = [
-      { src: "Bilder/Oreo.webp", alt: "Slide 1" },
-      { src: "Bilder/Kokus.webp", alt: "Slide 2" }
+      { src: "../Bilder/haloween.png", alt: "Slide 1" },
+      { src: "../Bilder/Kokus.webp", alt: "Slide 2" }
     ];
         const INTERVAL_MS = 8000; // Zeit zwischen Slides
         const AUTOPLAY = true;
