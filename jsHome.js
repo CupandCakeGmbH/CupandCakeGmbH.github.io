@@ -1,5 +1,5 @@
     const slides = [
-      { src: "../Bilder/haloween.png", alt: "Slide 1" },
+      { src: "../Bilder/haloween.png", alt: "Halloween Special" },
       { src: "../Bilder/Kokus.webp", alt: "Slide 2" }
     ];
         const INTERVAL_MS = 8000; // Zeit zwischen Slides
