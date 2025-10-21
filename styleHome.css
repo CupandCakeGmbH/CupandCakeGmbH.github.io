@@ -130,6 +130,9 @@
   width: 31%;
   border-radius: 20px 0;
   background-color: var(--light-background-color);
+  display: flex;
+  flex-direction: column;
+
 }
 
 .cupcake img{
@@ -142,16 +145,19 @@
   margin: 0 auto;
 }
 
-.cupcake .text{
-  margin: 0 20px;
+.text{
+  margin: 0 20px 1rem;
   text-align: justify;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: flex-end;
+  justify-content: space-between;
+
 }
 
 .mehrErfahren{
-  display: block;
-  width: fit-content;
-  margin-left: auto;
-  margin-bottom: 0.5rem;
+  justify-self: flex-end;
 }
 
 .mehrErfahren:hover, .mehrErfahren:focus{
