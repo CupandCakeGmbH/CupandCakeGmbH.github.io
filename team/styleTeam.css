@@ -1,0 +1,36 @@
+main{
+    max-width: 1000px;
+    margin: 0 auto 2rem;
+}
+
+h1{
+    margin: 0 auto;
+    width: fit-content;
+}
+
+h3{
+    border-bottom: none;
+}
+
+.personen{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.person{
+    display: flex;
+    border-radius: 20px;
+    align-content: start;
+    justify-content: center;
+    padding: 1rem;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.person img{
+    border-radius: 50%;
+    max-width: 300px;
+    
+}

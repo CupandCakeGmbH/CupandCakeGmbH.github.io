@@ -1,0 +1,23 @@
+main{
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+h1{
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.gruppenfoto img{
+    margin-top: 2rem;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.mitglieder p{
+    margin-bottom: 0.5rem;
+}
+
+.bold{
+    font-weight: bold;
+}
