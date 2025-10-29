@@ -10,6 +10,7 @@ h1{
 
 h3{
     border-bottom: none;
+    padding: 0;
 }
 
 .personen{
@@ -29,8 +30,49 @@ h3{
     flex-wrap: wrap;
 }
 
-.person img{
+.person img, .abteilungsleiter img{
     border-radius: 50%;
     max-width: 300px;
-    
+}
+
+.abteilungsleiter{
+    grid-column: 1/3;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+}
+
+.personen p{
+    text-align: center;
+    margin: 0;
+    border: 1.5px solid var(--dark-hover-background-color);
+    border-left: none;
+    border-right: none;
+    width: 200px;
+    margin: 0 auto;
+}
+
+a:hover{
+    color: var(--dark-hover-background-color);
+    transition: var(--custom-transition);
+}
+
+main ul{
+    margin-left: 2rem;
+    text-align: left;
+}
+
+main ul li{
+    margin: 2rem;
+}
+
+main ul p{
+    margin: 0;
+}
+
+.bulletpoint{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--dark-hover-background-color);
+
 }
