@@ -21,3 +21,41 @@ h1{
 .bold{
     font-weight: bold;
 }
+
+.abteilungen{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.abteilung{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.abteilung img{
+    width: 100%;
+    border-radius: 20px;
+    border: 2px solid transparent;
+}
+
+.abteilung p{
+    border-bottom: 1.5px solid var(--dark-hover-background-color);
+    font-size: 1.25rem;
+    margin-top: 0.75rem;
+    height: fit-content;
+}
+
+a.abteilung:hover p{
+    color: var(--dark-hover-background-color);
+    border-width: 2px;
+    transition: var(--custom-transition);
+    margin-bottom: calc(1.25rem - 0.5px);
+}
+
+a.abteilung:hover img{
+    border-color: var(--dark-hover-background-color);
+    transition: var(--custom-transition);
+}
