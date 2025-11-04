@@ -59,3 +59,8 @@ a.abteilung:hover img{
     border-color: var(--dark-hover-background-color);
     transition: var(--custom-transition);
 }
+
+.organigramm{
+    width: 120%;
+    margin-left: -10%;
+}
