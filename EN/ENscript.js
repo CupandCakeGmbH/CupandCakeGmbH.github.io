@@ -45,7 +45,7 @@ const langBtn = document.getElementById("langBtn");
 
   const langLinks = {
     de: "#",
-    en: "../index.html"
+    en: "../../index.html"
   };
 
   // Toggle Dropdown

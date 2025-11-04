@@ -130,7 +130,7 @@ nav li:hover a, nav li:focus a{
     position: fixed;
     top: 0;
     left: 0;
-    width: 340px;
+    width: 360px;
     height: 100vh;
     background-color: var(--dark-hover-background-color);
     z-index: 1001;

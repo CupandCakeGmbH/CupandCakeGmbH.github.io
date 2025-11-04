@@ -160,7 +160,7 @@
   justify-self: flex-end;
 }
 
-.mehrErfahren:hover, .mehrErfahren:focus{
+.mehrErfahren:hover, .mehrErfahren:focus, .aboutUS a:hover, .aboutUS a:focus{
   color: var(--dark-hover-background-color);
   transition: var(--custom-transition);
 }
@@ -199,3 +199,4 @@
   object-fit: cover;    
   border-radius: 20px;
 }
+
