@@ -1,6 +1,6 @@
     const slides = [
-      { src: "../Bilder/haloween.png", alt: "Halloween Special" },
-      { src: "../Bilder/Kokus.webp", alt: "Slide 2" }
+        { src: "../Bilder/tagOffeneTuer.png", alt: "Tag der offenen Tür" },
+        { src: "../Bilder/plakat.png", alt: "Plakat Cup and Cake" }
     ];
         const INTERVAL_MS = 8000; // Zeit zwischen Slides
         const AUTOPLAY = true;
