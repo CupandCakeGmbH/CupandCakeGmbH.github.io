@@ -200,3 +200,38 @@
   border-radius: 20px;
 }
 
+@media only screen and (max-width:1160px){
+  .slideshow-section{
+    display: none;
+  }
+  
+  .line{
+    display: none;
+  }
+
+  .cupcakesPresentation{
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .cupcake{
+    width: 100%;
+  }
+
+  .aboutUS h1{
+    margin: 0 auto;
+  }
+
+  .aboutUS{
+    grid-template-columns: 100%;
+  }
+
+  .aboutUSText{
+    padding: 0 10px;
+  }
+
+  .aboutUsImg{
+    display: none;
+  }
+}

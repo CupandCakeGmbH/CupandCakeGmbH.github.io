@@ -52,6 +52,7 @@ h1 {
     font-size: 2.986em;
     width: fit-content;
     z-index: 100;
+    margin: 0 auto;
 }
 
 h1::after {
@@ -100,8 +101,17 @@ h3 {
 
 /* styling nav */
 
+nav{
+    display: grid;
+    grid-template-columns: 90% 10%;
+}
+
 ul{
     text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 li{
@@ -116,7 +126,6 @@ nav li a {
     font-family: "dancing script";
     font-size: 1.44rem;
     transition: all 300ms linear;
-
 }
 
 nav li:hover a, nav li:focus a{
@@ -261,8 +270,7 @@ a.closebtn:hover, a.closebtn:focus-visible {
     user-select: none;
     max-width: fit-content;
     background-color: var(--custom-white);
-    left: 95%;
-    top: -2.75rem;
+    left: 80%;
 }
 
 .lang-btn {
@@ -405,6 +413,10 @@ footer a:hover, a:focus{
 
 /* responsive */
 @media only screen and (max-width:820px){
+    body{
+        margin: 20px auto 0;
+    }
+    
     footer{
         flex-direction: column;
         align-items: center;
@@ -413,6 +425,10 @@ footer a:hover, a:focus{
 
     footer section{
     width: 100%;
+    }
+
+    .language-select{
+        display: none;
     }
 }
 
