@@ -106,7 +106,7 @@ nav{
     grid-template-columns: 90% 10%;
 }
 
-ul{
+nav ul{
     text-align: center;
     display: flex;
     justify-content: center;
