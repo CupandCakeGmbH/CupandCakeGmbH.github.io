@@ -23,7 +23,7 @@
 
 /* general rules for body */
 body {
-    width: clamp(400px, 95vw, 1400px);
+    width: min(95vw, 1400px);
     margin: 50px auto 0;
     line-height: 1.5;
     background-color: var(--custom-white);
@@ -270,7 +270,8 @@ a.closebtn:hover, a.closebtn:focus-visible {
     user-select: none;
     max-width: fit-content;
     background-color: var(--custom-white);
-    left: 80%;
+    justify-self: end;
+    align-self: center;
 }
 
 .lang-btn {
@@ -425,10 +426,6 @@ footer a:hover, a:focus{
 
     footer section{
     width: 100%;
-    }
-
-    .language-select{
-        display: none;
     }
 }
 

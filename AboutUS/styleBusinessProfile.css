@@ -25,3 +25,15 @@ main h3{
     margin-top: 2rem;
     padding-bottom: 0;
 }
+
+.linkVisible{
+    color: var(--dark-hover-background-color);
+}
+
+.linkVisible:hover{
+    text-decoration: underline var(--dark-hover-background-color);
+}
+
+.aufzaehlung{
+    margin-left: 2rem;
+}
