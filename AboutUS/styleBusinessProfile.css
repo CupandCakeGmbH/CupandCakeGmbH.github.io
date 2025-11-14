@@ -1,10 +1,11 @@
+main ul{
+    margin: 1rem 0;
+}
+
 main li{
     display: block;
     text-align: left;
-}
-
-main ul{
-    margin: 1rem 0;
+    width: 100%;
 }
 
 main li p{
@@ -34,6 +35,30 @@ main h3{
     text-decoration: underline var(--dark-hover-background-color);
 }
 
-.aufzaehlung{
-    margin-left: 2rem;
+.ziel{
+    margin-bottom: 2.5rem;
+}
+
+.ziel p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.ziel .subtitleAufzaelung{
+    margin: 1rem 2rem;
+}
+
+.ziel ul{
+    display: block;
+}
+
+.ziel li{
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.ziel span{
+    color: var(--dark-hover-background-color);
+    font-weight: bold;
+    margin-right: 0.5rem;
 }
