@@ -1,0 +1,93 @@
+.Container{
+    display: grid;
+    gap: 0 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+}
+
+h1{
+    display: block;
+    grid-column: 1 / 4;
+    margin: 0 auto 2rem;
+}
+
+.CupCake{
+    border-radius: 20px;
+}
+
+.CupCake img{
+    width: 100%;
+    border-radius: 20px;
+    margin: 0;
+}
+
+.beschriftung, .beschriftung p{
+    text-align: center;
+    margin: 0;
+    font-family: "dancing script";
+    position: relative;
+    top: -1.25rem;
+}
+
+.name{
+    font-size: 1.5625rem;
+}
+
+p.preis{
+    font-size: 1rem;
+}
+
+.dicover{
+    position: relative;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+    background-color: var(--dark-hover-background-color);
+    color: var(--custom-white);
+    margin: 0;
+    top: -2.75rem;
+    visibility: hidden;
+}
+
+.dicover p{
+    margin: 0;
+    width: fit-content;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--dark-hover-background-color);
+}
+
+.CupCake:hover .dicover{
+    visibility: visible;
+}
+
+.CupCake:hover .beschriftung{
+    color: var(--dark-hover-background-color);
+    transition: var(--custom-transition);
+}
+
+.dicover:hover p{
+    color: var(--hover-link);
+    border-bottom: 1px solid var(--hover-link);
+    transition: var(--custom-transition);
+}
+
+.katalog {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+}
+
+.katalog p{
+    margin: 0;
+}
+
+.katalog a{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+.katalog a:hover, .katalog a:focus{
+    color: var(--dark-hover-background-color);
+    transition: var(--custom-transition);
+}
