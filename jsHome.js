@@ -1,5 +1,6 @@
     const slides = [
-        { src: "../Bilder/uebungsfirmenmesse.png", alt: "Plakat Cup and Cake" },
+        { src: "../Bilder/uebungsfirmenmesse.png", alt: "Übungsfirmenmesse" },
+        {src: "../Bilder/fruehling.png", alt:"Spring Edition"},
         { src: "../Bilder/plakat.png", alt: "Plakat Cup and Cake" }
     ];
         const INTERVAL_MS = 8000; // Zeit zwischen Slides
