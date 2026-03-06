@@ -181,3 +181,10 @@
 #weißeSchoko img{
     object-position: 46% center;
 }
+
+@media only screen and (max-width:1160px){
+    .CupCake{
+        display: block;
+        gap: 2rem;
+        }
+}
