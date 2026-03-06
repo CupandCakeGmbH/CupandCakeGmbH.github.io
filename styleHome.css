@@ -200,6 +200,21 @@
   border-radius: 20px;
 }
 
+.createOwn{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: 2rem;
+  align-items: stretch;
+  margin-bottom: 2rem;
+}
+
+.createOwnBild img{
+  width: calc(100% - 2rem);
+  object-fit: cover;    
+  border-radius: 20px;
+}
+
 @media only screen and (max-width:1160px){
   .slideshow-section{
     display: none;
