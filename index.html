@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="styleHome.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <script src="assets/vendor/lucide.min.js" defer></script>
+    <script src="design.js" defer></script>
 </head>
-<body>
+<body class="homepage">
     <header>
         <nav>
             <ul>
@@ -54,7 +56,6 @@
             </div>
             <div class="sidenav-inner">
                 <a href="CupCakes/CupCakeOverfew.html" class="title">Cup Cakes</a>
-                <a href="CupCakes/saisonCupCake.html"class="subtitle">Saisonaler CupCake</a>
                 <!-- klassiker -->
                 <a href="CupCakes/CupCakeOverfew.html#klassiker" class="subtitle">Klassische</a>
                 <a href="CupCakes/schoko.html">Schoko</a>
@@ -142,32 +143,26 @@
                 <path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"/>
             </svg>
         </button>
-        <section class="slideshow-section" aria-labelledby="slideshow-heading">
-            <h2 id="slideshow-heading" class="sr-only">Unsere Highlights</h2>
-
-            <!-- Ladeanimation -->
-            <div id="slideshow-loader" class="slideshow-loader" role="status" aria-live="polite">
-                <div class="spinner"></div>
-                <span>Lade Bilder...</span>
+        <section class="hero" aria-labelledby="hero-heading">
+            <div class="hero-content">
+                <p class="hero-eyebrow">Vienna Business School Schönborngasse</p>
+                <h1 id="hero-heading">Cup <em>&amp;</em> Cake <small>GmbH</small></h1>
             </div>
-
-            <!-- Slideshow -->
-            <div id="slideshow" class="slideshow" role="region" aria-label="Bildershow" tabindex="0">
-                <div class="slides" id="slidesContainer"></div>
-
-                <!-- Steuerungs-Buttons -->
-                <button class="slide-control prev" id="prevBtn" aria-label="Vorherige Slide" aria-controls="slidesContainer" type="button">
-                    &#10094;
-                </button>
-                <button class="slide-control next" id="nextBtn" aria-label="Nächste Slide" aria-controls="slidesContainer" type="button">
-                    &#10095;
-                </button>
+            <div id="cupcake-scene" class="hero-scene" tabindex="0" role="img" aria-label="Drei drehbare Cupcakes">
+                <div class="hero-fallback"><img src="Bilder/Heidelbeere.webp" alt="Heidelbeere Cupcake"></div>
             </div>
+            <div class="hero-actions">
+                <a href="CupCakes/CupCakeOverfew.html" class="hero-link">Cupcakes <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+                <a href="AboutUS/aboutUs.html" class="hero-secondary">About Us</a>
+            </div>
+            <button id="scene-pause" class="scene-pause" type="button" aria-label="Animation pausieren" title="Animation pausieren" aria-pressed="false" hidden><i data-lucide="pause" aria-hidden="true"></i></button>
         </section>
+        <div class="home-content">
+            <div class="highlights-heading">
+                <h2>Unsere Highlights</h2>
+                <a href="CupCakes/CupCakeOverfew.html">Cupcakes <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+            </div>
 
-        <div class="line"></div>
-        <h1>Unsere Highlights</h1>
-        <br>
         <section class="cupcakesPresentation">
             <!-- Zitronen Preview -->
             <div class="cupcake">
@@ -203,10 +198,9 @@
                 </div>
             </div>
         </section>
-        <div class="line"></div>
         <section class="aboutUS">
             <div class="aboutUSText">
-                <h1>About US</h1>
+                <h2>About US</h2>
                 <div class="line"></div>
                 <div class="text">
                     <p>Das Team der Vienna Business School Schönborngasse ist voller Stolz darauf, die lebhafte und aufstrebende Übungsfirma Cup & Cake GmbH zu repräsentieren. Die Schülerinnen und Schüler der 4PK arbeiten gemeinsam mit den beiden geschäftsführenden Lehrkräften, Frau Mag. Petra Steinlechner und Herrn Mag. Markus Leitner, mit großem Engagement daran, den täglichen Geschäftsbetrieb zu leiten.</p>
@@ -219,19 +213,42 @@
             </div>
         </section>
         
+        <section class="slideshow-section" aria-labelledby="slideshow-heading">
+            <h2 id="slideshow-heading" class="sr-only">Unsere Highlights</h2>
+
+            <!-- Ladeanimation -->
+            <div id="slideshow-loader" class="slideshow-loader" role="status" aria-live="polite">
+                <div class="spinner"></div>
+                <span>Lade Bilder...</span>
+            </div>
+
+            <!-- Slideshow -->
+            <div id="slideshow" class="slideshow" role="region" aria-label="Bildershow" tabindex="0">
+                <div class="slides" id="slidesContainer"></div>
+
+                <!-- Steuerungs-Buttons -->
+                <button class="slide-control prev" id="prevBtn" aria-label="Vorherige Slide" aria-controls="slidesContainer" type="button">
+                    <i data-lucide="chevron-left" aria-hidden="true"></i>
+                </button>
+                <button class="slide-control next" id="nextBtn" aria-label="Nächste Slide" aria-controls="slidesContainer" type="button">
+                    <i data-lucide="chevron-right" aria-hidden="true"></i>
+                </button>
+            </div>
+        </section>
+        </div>
     </main>
     <footer>
         <section class="footerInfos">
             <h3>Mehr Informationen</h3>
             <div class="footerInfosLinks">
-                <a href="../AboutUS/aboutUs.html">About Us</a>
-                <a href="../AboutUS/allergene.html">Allergene</a>
-                <a href="../AboutUS/AGB.html">AGB</a>
-                <a href="../CupCakes/CupCakeOverfew.html">Cupcakes</a>
-                <a href="../AboutUS/impressum.html">Impressum</a>
+                <a href="AboutUS/aboutUs.html">About Us</a>
+                <a href="AboutUS/allergene.html">Allergene</a>
+                <a href="AboutUS/AGB.html">AGB</a>
+                <a href="CupCakes/CupCakeOverfew.html">Cupcakes</a>
+                <a href="AboutUS/impressum.html">Impressum</a>
                 <a href="https://cupcakes-wien.at/" target="_blank">Partner</a>
                 <a href="https://marketplace.penworldwide.org/?enterprisePenCode=AT010000851" target="_blank">Shop</a>
-                <a href="../team/teamOverfew.html">Team</a>
+                <a href="team/teamOverfew.html">Team</a>
             </div>
         </section>
 
@@ -275,7 +292,7 @@
         </section>
     </footer>
 
-    <script src="script.js"></script>
     <script src="jsHome.js"></script>
+    <script type="module" src="cupcake3d.js"></script>
 </body>
 </html>

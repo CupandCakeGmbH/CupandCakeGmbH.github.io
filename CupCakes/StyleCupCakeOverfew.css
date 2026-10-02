@@ -1,93 +1,18 @@
-.Container{
-    display: grid;
-    gap: 0 2rem;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
-}
-
-h1{
-    display: block;
-    grid-column: 1 / 4;
-    margin: 0 auto 2rem;
-}
-
-.CupCake{
-    border-radius: 20px;
-}
-
-.CupCake img{
-    width: 100%;
-    border-radius: 20px;
-    margin: 0;
-}
-
-.beschriftung, .beschriftung p{
-    text-align: center;
-    margin: 0;
-    font-family: "dancing script";
-    position: relative;
-    top: -1.25rem;
-}
-
-.name{
-    font-size: 1.5625rem;
-}
-
-p.preis{
-    font-size: 1rem;
-}
-
-.dicover{
-    position: relative;
-    padding: 0.5rem;
-    text-align: center;
-    border-radius: 0 0 20px 20px;
-    background-color: var(--dark-hover-background-color);
-    color: var(--custom-white);
-    margin: 0;
-    top: -2.75rem;
-    visibility: hidden;
-}
-
-.dicover p{
-    margin: 0;
-    width: fit-content;
-    margin: 0 auto;
-    border-bottom: 1px solid var(--dark-hover-background-color);
-}
-
-.CupCake:hover .dicover{
-    visibility: visible;
-}
-
-.CupCake:hover .beschriftung{
-    color: var(--dark-hover-background-color);
-    transition: var(--custom-transition);
-}
-
-.dicover:hover p{
-    color: var(--hover-link);
-    border-bottom: 1px solid var(--hover-link);
-    transition: var(--custom-transition);
-}
-
-.katalog {
-    margin-top: 0;
-    margin-bottom: 2rem;
-    font-size: 1.25rem;
-}
-
-.katalog p{
-    margin: 0;
-}
-
-.katalog a{
-    display: flex;
-    align-items: center;
-    width: fit-content;
-}
-
-.katalog a:hover, .katalog a:focus{
-    color: var(--dark-hover-background-color);
-    transition: var(--custom-transition);
-}
+.Container { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 28px; margin-bottom: 64px; }
+main h1 { grid-column: 1 / -1; text-align: left; width: 100%; margin: 0 0 10px; font-size: 2.75rem; }
+.CupCake { min-width: 0; display: flex; flex-direction: column; position: relative; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; background: #fff; transition: transform .3s ease,box-shadow .3s ease; }
+.CupCake:hover { transform: translateY(-5px); box-shadow: 0 16px 32px #233e350d; }
+.CupCake img { display: block; width: 100%; aspect-ratio: 1.1; object-fit: cover; border-radius: 0; margin: 0; }
+.beschriftung { padding: 20px 22px; display: flex; justify-content: space-between; gap: 16px; align-items: baseline; }
+.beschriftung p { margin: 0; }
+.name { font: 400 1.3rem var(--serif); }
+p.preis { font-size: .8rem; white-space: nowrap; color: var(--muted); }
+.dicover { padding: 8px 22px; font-size: .7rem; color: var(--muted); border-top: 1px solid var(--border); order: 3; }
+.dicover p { margin: 0; }
+.CupCake:hover .dicover { background: var(--mint); color: var(--font-color); }
+.katalog { margin-bottom: 3rem; font-size: .9rem; }
+.katalog p { margin: 0; }
+.katalog a { display: inline-flex; gap: 8px; align-items: center; }
+.katalog svg { width: 22px; }
+@media (max-width: 1000px) { .Container { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 20px; } }
+@media (max-width: 600px) { .Container { grid-template-columns: 1fr; gap: 24px; margin-bottom: 40px; } main h1 { font-size: 2.15rem; } }

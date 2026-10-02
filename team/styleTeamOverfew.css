@@ -1,66 +1,14 @@
-main{
-    max-width: 800px;
-    margin: 0 auto 2rem;
-}
-
-h1{
-    margin: 0 auto;
-    width: fit-content;
-}
-
-.gruppenfoto img{
-    margin-top: 2rem;
-    width: 100%;
-    border-radius: 20px;
-}
-
-.mitglieder p{
-    margin-bottom: 0.5rem;
-}
-
-.bold{
-    font-weight: bold;
-}
-
-.abteilungen{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.abteilung{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.abteilung img{
-    width: 100%;
-    border-radius: 20px;
-    border: 2px solid transparent;
-}
-
-.abteilung p{
-    border-bottom: 1.5px solid var(--dark-hover-background-color);
-    font-size: 1.25rem;
-    margin-top: 0.75rem;
-    height: fit-content;
-}
-
-a.abteilung:hover p{
-    color: var(--dark-hover-background-color);
-    border-width: 2px;
-    transition: var(--custom-transition);
-    margin-bottom: calc(1.25rem - 0.5px);
-}
-
-a.abteilung:hover img{
-    border-color: var(--dark-hover-background-color);
-    transition: var(--custom-transition);
-}
-
-.organigramm{
-    width: 120%;
-    margin-left: -10%;
-}
+main { max-width: 1100px; }
+main > h1 { margin-bottom: 28px; }
+.gruppenfoto img { display: block; width: 100%; border-radius: 6px; margin-top: 32px; }
+.mitglieder p { margin-bottom: .5rem; }
+.bold { font-weight: 700; }
+.abteilungen { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 28px; margin-top: 40px; }
+.abteilung { display: block; overflow: hidden; border: 1px solid var(--border); border-radius: 6px; }
+.abteilung img { display: block; width: 100%; aspect-ratio: 1.5; object-fit: cover; border-radius: 0; }
+.abteilung p { font: 400 1.3rem var(--serif); padding: 16px 20px; margin: 0; }
+.abteilung:hover { transform: translateY(-4px); background: var(--mint); }
+.organigramm { width: 100%; height: auto; margin: 0; }
+.organigramm img { width: 100%; }
+@media (max-width: 760px) { .abteilungen { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; } .abteilung p { font-size: 1.05rem; padding: 12px; } }
+@media (max-width: 400px) { .abteilungen { grid-template-columns: 1fr; } }

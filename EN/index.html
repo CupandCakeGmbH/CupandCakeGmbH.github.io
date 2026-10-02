@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="../styleHome.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <script src="../assets/vendor/lucide.min.js" defer></script>
+    <script src="../design.js" defer></script>
 </head>
-<body>
+<body class="homepage">
     <header>
         <nav>
             <ul>
@@ -140,30 +142,26 @@
                 <path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"/>
             </svg>
         </button>
-        <section class="slideshow-section" aria-labelledby="slideshow-heading">
-            <h2 id="slideshow-heading" class="sr-only">Unsere Highlights</h2>
-
-            <!-- Ladeanimation -->
-            <div id="slideshow-loader" class="slideshow-loader" role="status" aria-live="polite">
-                <div class="spinner"></div>
-                <span>loading...</span>
+        <section class="hero" aria-labelledby="hero-heading">
+            <div class="hero-content">
+                <p class="hero-eyebrow">Vienna Business School Schönborngasse</p>
+                <h1 id="hero-heading">Cup <em>&amp;</em> Cake <small>GmbH</small></h1>
             </div>
-
-            <!-- Slideshow -->
-            <div id="slideshow" class="slideshow" role="region" aria-label="Bildershow" tabindex="0">
-                <div class="slides" id="slidesContainer"></div>
-
-                <!-- Steuerungs-Buttons -->
-                <button class="slide-control prev" id="prevBtn" aria-label="Vorherige Slide" aria-controls="slidesContainer" type="button">
-                    &#10094;
-                </button>
-                <button class="slide-control next" id="nextBtn" aria-label="Nächste Slide" aria-controls="slidesContainer" type="button">
-                    &#10095;
-                </button>
+            <div id="cupcake-scene" class="hero-scene" tabindex="0" role="img" aria-label="Three rotating cupcakes">
+                <div class="hero-fallback"><img src="../Bilder/Heidelbeere.webp" alt="Blueberry cupcake"></div>
             </div>
+            <div class="hero-actions">
+                <a href="CupCakes/CupCakeOverfew.html" class="hero-link">Cupcakes <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+                <a href="AboutUS/aboutUs.html" class="hero-secondary">About Us</a>
+            </div>
+            <button id="scene-pause" class="scene-pause" type="button" aria-label="Pause animation" title="Pause animation" aria-pressed="false" hidden><i data-lucide="pause" aria-hidden="true"></i></button>
         </section>
+        <div class="home-content">
+            <div class="highlights-heading">
+                <h2>Our Highlights</h2>
+                <a href="CupCakes/CupCakeOverfew.html">Cupcakes <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+            </div>
 
-        <div class="line"></div>
         <section class="cupcakesPresentation">
             <!-- Zitronen Preview -->
             <div class="cupcake">
@@ -193,10 +191,9 @@
                 </div>
             </div>
         </section>
-        <div class="line"></div>
         <section class="aboutUS">
             <div class="aboutUSText">
-                <h1>About US</h1>
+                <h2>About US</h2>
                 <div class="line"></div>
                 <div class="text">
                     <p>The team at Vienna Business School Schönborngasse is proud to represent the lively and ambitious training company Cup & Cake GmbH. The students of class 4PK work together with the two managing teachers, Ms. Mag. Petra Steinlechner and Mr. Mag. Markus Leitner, with great dedication to manage the daily business operations.</p>
@@ -209,6 +206,29 @@
             </div>
         </section>
         
+        <section class="slideshow-section" aria-labelledby="slideshow-heading">
+            <h2 id="slideshow-heading" class="sr-only">Unsere Highlights</h2>
+
+            <!-- Ladeanimation -->
+            <div id="slideshow-loader" class="slideshow-loader" role="status" aria-live="polite">
+                <div class="spinner"></div>
+                <span>loading...</span>
+            </div>
+
+            <!-- Slideshow -->
+            <div id="slideshow" class="slideshow" role="region" aria-label="Bildershow" tabindex="0">
+                <div class="slides" id="slidesContainer"></div>
+
+                <!-- Steuerungs-Buttons -->
+                <button class="slide-control prev" id="prevBtn" aria-label="Vorherige Slide" aria-controls="slidesContainer" type="button">
+                    <i data-lucide="chevron-left" aria-hidden="true"></i>
+                </button>
+                <button class="slide-control next" id="nextBtn" aria-label="Nächste Slide" aria-controls="slidesContainer" type="button">
+                    <i data-lucide="chevron-right" aria-hidden="true"></i>
+                </button>
+            </div>
+        </section>
+        </div>
     </main>
 
     <footer>
@@ -265,7 +285,7 @@
             </div>
         </section>
     </footer>
-    <script src="ENscript.js"></script>
     <script src="../jsHome.js"></script>
+    <script type="module" src="../cupcake3d.js"></script>
 </body>
 </html>
