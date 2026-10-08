@@ -6,6 +6,7 @@ main > h1 { margin-bottom: 28px; }
 .abteilungen { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 28px; margin-top: 40px; }
 .abteilung { display: block; overflow: hidden; border: 1px solid var(--border); border-radius: 6px; }
 .abteilung img { display: block; width: 100%; aspect-ratio: 1.5; object-fit: cover; border-radius: 0; }
+.abteilung img.department-group { aspect-ratio: 4 / 3; object-fit: contain; background: var(--mint); }
 .abteilung p { font: 400 1.3rem var(--serif); padding: 16px 20px; margin: 0; }
 .abteilung:hover { transform: translateY(-4px); background: var(--mint); }
 .organigramm { width: 100%; height: auto; margin: 0; }

@@ -1,5 +1,7 @@
 main { max-width: 1050px; }
 main h3 { border: 0; }
+.team-photo { margin: 32px 0 40px; }
+.team-photo img { display: block; width: 100%; height: auto; border-radius: 6px; }
 .personen { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 32px; margin-top: 36px; }
 .person { display: flex; flex-direction: column; align-items: center; justify-content: start; gap: 18px; padding: 24px; border: 1px solid var(--border); border-radius: 6px; }
 .person img, .abteilungsleiter img { width: 100%; max-width: 280px; aspect-ratio: 1; object-fit: cover; object-position: center top; border-radius: 6px; }
