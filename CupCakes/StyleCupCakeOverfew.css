@@ -1,9 +1,17 @@
 .Container { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 28px; margin-bottom: 64px; }
+.Container > h2 { grid-column: 1 / -1; font-size: 2.1rem; margin: 0 0 10px; }
+.category-tax { grid-column: 1 / -1; margin: 0; font-size: .8rem; color: var(--muted); }
 main h1 { grid-column: 1 / -1; text-align: left; width: 100%; margin: 0 0 10px; font-size: 2.75rem; }
 .CupCake { min-width: 0; display: flex; flex-direction: column; position: relative; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; background: #fff; transition: transform .3s ease,box-shadow .3s ease; }
 .CupCake:hover { transform: translateY(-5px); box-shadow: 0 16px 32px #233e350d; }
 .CupCake img { display: block; width: 100%; aspect-ratio: 1.1; object-fit: cover; border-radius: 0; margin: 0; }
 .beschriftung { padding: 20px 22px; display: flex; justify-content: space-between; gap: 16px; align-items: baseline; }
+.beschriftung { flex-wrap: wrap; }
+.catalog-description { margin: 0; padding: 0 22px 20px; font-size: .85rem; color: var(--muted); line-height: 1.6; }
+.catalog-order-note { margin: 0; padding: 0 22px 20px; font-size: .8rem; }
+.dicover { margin-top: auto; }
+.dicover p { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.dicover svg { width: 16px; height: 16px; flex-shrink: 0; }
 .beschriftung p { margin: 0; }
 .name { font: 400 1.3rem var(--serif); }
 p.preis { font-size: .8rem; white-space: nowrap; color: var(--muted); }

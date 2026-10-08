@@ -1,0 +1,92 @@
+{
+  "source": "Katalog_Cup-and-Cake_2026-27.pdf",
+  "categories": [
+    { "id": "klassiker", "de": "Klassiker & Lieblinge", "en": "Classics & Favourites" },
+    { "id": "spezialitaeten", "de": "Unsere Spezialitäten", "en": "Our Specialities" },
+    { "id": "backkurse", "de": "Rund ums Backen", "en": "Baking Classes" }
+  ],
+  "items": [
+    {
+      "id": "redVelvet", "category": "klassiker", "price": 5.9, "vat": 10, "allergens": ["A", "C", "G"],
+      "name": { "de": "Red Velvet Cupcake", "en": "Red Velvet Cupcake" },
+      "description": { "de": "Saftiger Red-Velvet-Teig mit einer feinen Kakaonote, verfeinert mit cremigem Frosting. Samtig, harmonisch und ein echter Klassiker für jeden Anlass.", "en": "Moist red velvet sponge with a delicate cocoa note, finished with creamy frosting. Velvety, balanced and a true classic for every occasion." }
+    },
+    {
+      "id": "saltedCaramell", "category": "klassiker", "price": 5.9, "vat": 10, "allergens": ["A", "C", "G"],
+      "name": { "de": "Salted Caramel Cupcake", "en": "Salted Caramel Cupcake" },
+      "description": { "de": "Weicher Vanilleteig mit einem Kern aus warmem Karamell. Das leicht gesalzene Frosting sorgt für den perfekten süß-salzigen Kontrast.", "en": "Soft vanilla sponge with a warm caramel centre. Lightly salted frosting creates the perfect sweet and salty contrast." }
+    },
+    {
+      "id": "oreo", "category": "klassiker", "price": 5.9, "vat": 10, "allergens": ["A", "C", "G"],
+      "name": { "de": "Oreo Cupcake", "en": "Oreo Cupcake" },
+      "description": { "de": "Schokoladiger Teig mit knackigen Oreo-Stückchen, gekrönt von luftigem Vanille-Frosting. Ein Mini-Keks obenauf macht ihn zum Hingucker.", "en": "Chocolate sponge with crunchy Oreo pieces, topped with airy vanilla frosting. A mini cookie on top makes it an eye-catcher." }
+    },
+    {
+      "id": "biscoff", "category": "klassiker", "price": 5.9, "vat": 10, "allergens": ["A"],
+      "name": { "de": "Biscoff Cupcake", "en": "Biscoff Cupcake" },
+      "description": { "de": "Rein pflanzlicher Teig mit knusprigen Biscoff-Keksstückchen und karamellierter Note. Komplett laktosefrei und vegan, ohne Kompromisse beim Geschmack.", "en": "Plant-based sponge with crunchy Biscoff cookie pieces and a caramelised note. Completely lactose-free and vegan, without compromising on flavour." }
+    },
+    {
+      "id": "kokos", "category": "klassiker", "price": 6.9, "vat": 10, "allergens": ["A", "C", "G"],
+      "name": { "de": "Kokos Cupcake", "en": "Coconut Cupcake" },
+      "description": { "de": "Saftiger Vanilleteig mit fein geriebener Kokosnuss, getoppt mit einer Haube aus luftigem Kokos-Frosting. Ein kleiner Urlaub für zwischendurch.", "en": "Moist vanilla sponge with finely grated coconut, topped with airy coconut frosting. A little holiday in every bite." }
+    },
+    {
+      "id": "schokoOrange", "category": "klassiker", "price": 6.9, "vat": 10, "allergens": ["A", "C", "G"],
+      "name": { "de": "Schoko-Orange Cupcake", "en": "Chocolate Orange Cupcake" },
+      "description": { "de": "Kräftiger Schokoladenteig mit feinem Orangenaroma. Das Schoko-Frosting bringt beide Aromen perfekt zusammen.", "en": "Rich chocolate sponge with a delicate orange aroma. Chocolate frosting brings both flavours together perfectly." }
+    },
+    {
+      "id": "firmenCupcakes", "category": "spezialitaeten", "price": 5, "vat": 10, "allergens": ["A", "C", "G"],
+      "name": { "de": "Firmencupcakes mit Logo", "en": "Corporate Cupcakes with Logo" },
+      "description": { "de": "Cupcakes mit individuell gestaltetem Firmenlogo, perfekt für Events, Meetings oder als besonderes Give-away. Ein süßer Hingucker mit Wiedererkennungswert.", "en": "Cupcakes with a customised company logo, perfect for events, meetings or as a special giveaway. A sweet treat that makes your brand memorable." },
+      "unit": { "de": "pro Stück", "en": "per piece" }, "note": { "de": "Ab 100 Stück.", "en": "Minimum order: 100 pieces." }
+    },
+    {
+      "id": "einhorn", "category": "spezialitaeten", "price": 6.9, "vat": 10, "allergens": ["A", "C", "G"],
+      "name": { "de": "Einhorn Cupcake", "en": "Unicorn Cupcake" },
+      "description": { "de": "Bunt gefärbter Vanilleteig, getoppt mit pastellfarbenem Frosting und essbarem Glitzer. Ein verspielter Hingucker für jeden besonderen Anlass.", "en": "Colourful vanilla sponge topped with pastel frosting and edible glitter. A playful eye-catcher for every special occasion." }
+    },
+    {
+      "id": "teaParty", "category": "spezialitaeten", "price": 45, "vat": 10, "allergens": ["A", "C", "G"],
+      "name": { "de": "Tea Party", "en": "Tea Party" },
+      "description": { "de": "Stilvoll angerichtet auf einer Etagere, serviert mit süßen und pikanten Köstlichkeiten im Afternoon-Tea-Stil. Ein gemütliches Erlebnis zum Genießen mit Freunden.", "en": "Elegantly arranged on a tiered stand with sweet and savoury afternoon tea treats. A relaxing experience to enjoy with friends." }
+    },
+    {
+      "id": "myLove", "category": "spezialitaeten", "price": 75, "vat": 10, "allergens": ["A", "C", "G"],
+      "name": { "de": "\"My Love\" Riesencupcake", "en": "\"My Love\" Giant Cupcake" },
+      "description": { "de": "Üppiger Vanilleteig in XL-Größe, getoppt mit cremigem Frosting und kleinen roten Herzen verziert. Der perfekte Hingucker für Valentinstag oder jede romantische Überraschung.", "en": "Generous XL vanilla sponge topped with creamy frosting and small red hearts. Perfect for Valentine's Day or a romantic surprise." }
+    },
+    {
+      "id": "allesGute", "category": "spezialitaeten", "price": 85, "vat": 10, "allergens": ["A", "C", "G"],
+      "name": { "de": "\"Alles Gute\" Riesencupcake", "en": "\"Alles Gute\" Giant Cupcake" },
+      "description": { "de": "Saftiger Schokoladen-Cupcake mit üppigem Schoko-Frosting, verziert mit Schokoladen-Stückchen und einem handgeschriebenen Schriftzug. Perfekt für persönliche Glückwünsche zu jedem Anlass.", "en": "Moist chocolate cupcake with generous chocolate frosting, chocolate pieces and a handwritten message. Perfect for personal good wishes on any occasion." }
+    },
+    {
+      "id": "miniCupcakes", "category": "spezialitaeten", "price": 125, "vat": 10, "allergens": ["A", "C", "G"],
+      "name": { "de": "50 süße Mini-Cupcakes", "en": "50 Sweet Mini Cupcakes" },
+      "description": { "de": "Eine bunte Auswahl an Mini-Cupcakes in verschiedenen Sorten und Toppings, liebevoll arrangiert auf einem Tablett. Ideal zum Teilen bei Feiern, Meetings oder als süßes Geschenk.", "en": "A colourful selection of mini cupcakes with assorted flavours and toppings, lovingly arranged on a tray. Ideal for sharing at celebrations, meetings or as a sweet gift." }
+    },
+    {
+      "id": "backkurs", "category": "backkurse", "price": 90, "vat": 20, "allergens": [],
+      "name": { "de": "Cupcake Backkurs", "en": "Cupcake Baking Class" },
+      "description": { "de": "Schritt für Schritt lernst du Teig, Frosting und die perfekte Spritztechnik. Ein kreativer Nachmittag für alle, die eigene Cupcakes zaubern wollen.", "en": "Learn to make sponge, frosting and perfect your piping technique step by step. A creative afternoon for anyone who wants to make their own cupcakes." }
+    },
+    {
+      "id": "kindergeburtstag", "category": "backkurse", "price": 40, "vat": 20, "allergens": [],
+      "name": { "de": "Kindergeburtstagskurs", "en": "Children's Birthday Baking Class" },
+      "description": { "de": "Gemeinsam verzieren die kleinen Gäste ihre eigenen Cupcakes mit Frosting, Streuseln und viel Fantasie. Ein süßer Spaß, der jeden Kindergeburtstag unvergesslich macht.", "en": "Young guests decorate their own cupcakes with frosting, sprinkles and plenty of imagination. Sweet fun that makes every birthday unforgettable." },
+      "unit": { "de": "pro Person", "en": "per person" }
+    },
+    {
+      "id": "vintageTortenkurs", "category": "backkurse", "price": 170, "vat": 20, "allergens": [],
+      "name": { "de": "Vintage Tortenkurs", "en": "Vintage Cake Class" },
+      "description": { "de": "Lerne, wie man Torten im eleganten Vintage-Stil mit Zackenmuster und Schleifen verziert. Ein kreativer Kurs für alle, die ihre Dekoriertechnik auf das nächste Level bringen wollen.", "en": "Learn to decorate cakes in an elegant vintage style with piped patterns and bows. A creative class for anyone who wants to take their decorating skills to the next level." }
+    },
+    {
+      "id": "teambuilding", "category": "backkurse", "price": null, "vat": 20, "allergens": [],
+      "name": { "de": "Teambuilding Backkurs", "en": "Teambuilding Baking Class" },
+      "description": { "de": "Gemeinsam verzieren Kolleg:innen ihre eigenen Cupcakes in entspannter Atmosphäre. Ein kreatives Teamevent, das Spaß und Zusammenhalt verbindet.", "en": "Colleagues decorate their own cupcakes together in a relaxed atmosphere. A creative team event combining fun and teamwork." }
+    }
+  ]
+}

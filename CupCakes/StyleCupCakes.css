@@ -1,6 +1,10 @@
 .CupCake { display: grid; grid-template-columns: minmax(0,.9fr) minmax(0,1.1fr); gap: 64px; align-items: start; }
 .CupCakeImg { width: 100%; min-width: 0; }
 .CupCakeImg img { width: 100%; aspect-ratio: 1 / 1.12; height: auto; display: block; object-fit: cover; border-radius: 6px; }
+.catalog-current .CupCakeImg img { aspect-ratio: auto; object-fit: contain; }
+.catalog-current .description h1 { font-size: 2.8rem; overflow-wrap: break-word; hyphens: auto; }
+.catalog-current .preis { flex-wrap: wrap; }
+.description .tax-note, .description .order-note { margin-top: 12px; font-size: .8rem; }
 .description { width: 100%; min-width: 0; padding: 12px 0; }
 .description h1 { font-size: 3.3rem; margin: 0 0 26px; width: auto; text-align: left; }
 .description h3 { font: 600 1rem var(--sans); margin: 28px 0 12px; text-align: left; }
@@ -23,3 +27,4 @@
 #heidelbeere img { object-position: 40% center; }
 @media (max-width: 1000px) { .CupCake { gap: 32px; } .description h1 { font-size: 2.7rem; } }
 @media (max-width: 760px) { .CupCake { grid-template-columns: 1fr; gap: 28px; } .CupCakeImg img { aspect-ratio: 1.1; } .description { padding: 0; } .description h1 { font-size: 2.5rem; } }
+@media (max-width: 760px) { .catalog-current .description h1 { font-size: 2rem; } }
