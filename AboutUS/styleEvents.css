@@ -9,7 +9,7 @@ main section div { align-self: center; text-align: left; min-width: 0; }
 @media (max-width: 760px) { main section { grid-template-columns: 1fr; gap: 24px; margin-bottom: 40px; } .headImg { grid-column: auto; } }
 
 .open-house-gallery {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 24px;
     border-bottom: 1px solid var(--border);
     padding-bottom: 36px;
@@ -20,7 +20,7 @@ main section div { align-self: center; text-align: left; min-width: 0; }
 .open-house-gallery figcaption { margin-top: 8px; font-size: .9rem; }
 
 @media (max-width: 760px) {
-    .open-house-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); scroll-margin-top: 32px; }
+    .open-house-gallery { scroll-margin-top: 32px; }
 }
 @media (max-width: 520px) {
     .open-house-gallery { grid-template-columns: 1fr; gap: 20px; }
