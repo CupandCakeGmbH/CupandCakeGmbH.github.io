@@ -55,7 +55,7 @@ nav.has-brand { grid-template-columns: auto minmax(0,1fr) auto; }
 nav ul { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 2rem; margin: 0; padding: 0; list-style: none; }
 nav li { display: inline-flex; }
 nav li a { display: inline-flex; padding: 8px 0; margin: 0; font: 600 .85rem var(--sans); border-radius: 0; background: transparent; border-bottom: 2px solid transparent; cursor: pointer; }
-nav li a:hover, nav li a:focus-visible, nav li a[aria-current='page'] { background: transparent; color: var(--dark-hover-background-color); border-bottom-color: var(--dark-hover-background-color); box-shadow: none; }
+nav li a:hover, nav li a:focus-visible, nav li a[aria-current='page'], nav li a[aria-current='location'] { background: transparent; color: var(--dark-hover-background-color); border-bottom-color: var(--dark-hover-background-color); box-shadow: none; }
 .language-select { position: relative; cursor: pointer; user-select: none; justify-self: end; min-width: 70px; background: transparent; font-size: .8rem; font-weight: 700; }
 .lang-btn { display: flex; align-items: center; justify-content: center; padding: 10px 0 10px 14px; border-left: 1px solid var(--border); }
 .arrow { height: 24px; margin-left: 4px; }

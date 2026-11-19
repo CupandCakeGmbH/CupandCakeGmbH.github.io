@@ -17,8 +17,30 @@
         container.prepend(brand());
         container.classList.add('has-brand');
     }
+
+    const openHouseAnchor = '#tag-der-offenen-tuer-2026';
+    const openHousePage = inEnglish => new URL(`${inEnglish ? 'EN/' : ''}AboutUS/events.html${openHouseAnchor}`, root);
+    const openHouseUrl = openHousePage(english);
+    const isOpenHouse = () => location.pathname === openHouseUrl.pathname && location.hash === openHouseAnchor;
+    const navList = nav?.querySelector('ul');
+    if (navList) {
+        const item = document.createElement('li');
+        const link = document.createElement('a');
+        link.href = openHouseUrl.href;
+        link.textContent = english ? 'Open House 2026' : 'Tag der offenen Tür 2026';
+        item.append(link);
+        navList.insertBefore(item, navList.lastElementChild);
+
+        const updateCurrentLocation = () => {
+            if (isOpenHouse()) link.setAttribute('aria-current', 'location');
+            else link.removeAttribute('aria-current');
+        };
+        updateCurrentLocation();
+        window.addEventListener('hashchange', updateCurrentLocation);
+    }
+
     document.querySelectorAll('nav a[href]').forEach(link => {
-        if (link.href === location.href) link.setAttribute('aria-current', 'page');
+        if (link.href === location.href && !link.hash) link.setAttribute('aria-current', 'page');
     });
     document.querySelectorAll('a[target="_blank"]').forEach(link => link.rel = 'noopener noreferrer');
     document.querySelectorAll('main img').forEach(img => {
@@ -112,7 +134,11 @@
         if (option) {
             option.tabIndex = 0;
             option.setAttribute('role', 'link');
-            const switchLanguage = () => { location.href = new URL(english ? 'index.html' : 'EN/index.html', root).href; };
+            const switchLanguage = () => {
+                location.href = isOpenHouse()
+                    ? openHousePage(!english).href
+                    : new URL(english ? 'index.html' : 'EN/index.html', root).href;
+            };
             option.addEventListener('click', switchLanguage);
             option.addEventListener('keydown', event => { if (event.key === 'Enter') switchLanguage(); });
         }

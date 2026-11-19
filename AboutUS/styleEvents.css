@@ -7,3 +7,21 @@ main section div { align-self: center; text-align: left; min-width: 0; }
 .linkVisible:hover { text-decoration: underline; }
 .datum { text-align: center; color: var(--muted); font-size: .8rem; }
 @media (max-width: 760px) { main section { grid-template-columns: 1fr; gap: 24px; margin-bottom: 40px; } .headImg { grid-column: auto; } }
+
+.open-house-gallery {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 36px;
+}
+.open-house-gallery h2 { grid-column: 1 / -1; margin: 0; }
+.open-house-gallery figure { margin: 0; }
+.open-house-gallery img { height: auto; }
+.open-house-gallery figcaption { margin-top: 8px; font-size: .9rem; }
+
+@media (max-width: 760px) {
+    .open-house-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); scroll-margin-top: 32px; }
+}
+@media (max-width: 520px) {
+    .open-house-gallery { grid-template-columns: 1fr; gap: 20px; }
+}
