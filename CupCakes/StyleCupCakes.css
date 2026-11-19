@@ -9,6 +9,8 @@
 .description h1 { font-size: 3.3rem; margin: 0 0 26px; width: auto; text-align: left; }
 .description h3 { font: 600 1rem var(--sans); margin: 28px 0 12px; text-align: left; }
 .description p { margin: 0; text-align: left; color: var(--muted); font-size: .9rem; }
+.description .donation-note, .description .blockIcons + .allergen-note { margin-top: 12px; }
+.description .donation-note { color: var(--font-color); }
 .blockIcons { display: flex; flex-wrap: wrap; gap: 26px; margin: 0; }
 .icon { display: flex; align-items: center; flex-direction: column; }
 .icon p { margin: 6px 0 0; font-size: .75rem; }

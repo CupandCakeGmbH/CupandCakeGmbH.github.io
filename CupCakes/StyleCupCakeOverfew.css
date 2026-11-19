@@ -9,6 +9,7 @@ main h1 { grid-column: 1 / -1; text-align: left; width: 100%; margin: 0 0 10px; 
 .beschriftung { flex-wrap: wrap; }
 .catalog-description { margin: 0; padding: 0 22px 20px; font-size: .85rem; color: var(--muted); line-height: 1.6; }
 .catalog-order-note { margin: 0; padding: 0 22px 20px; font-size: .8rem; }
+.catalog-donation-note { margin: 0; padding: 0 22px 20px; font-size: .85rem; }
 .dicover { margin-top: auto; }
 .dicover p { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
 .dicover svg { width: 16px; height: 16px; flex-shrink: 0; }

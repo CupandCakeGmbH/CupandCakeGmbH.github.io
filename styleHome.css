@@ -51,6 +51,7 @@ body.homepage main { width: 100%; margin: 0; }
 .bear-cupcake-post p, .bear-cupcake-post ul { margin-block: 0 1rem; }
 .bear-cupcake-post ul { padding-inline-start: 1.3rem; }
 .bear-cupcake-post li + li { margin-top: .55rem; }
+.bear-cupcake-post li a { text-decoration: underline; text-underline-offset: .15em; }
 .bear-cupcake-post img { display: block; width: min(100%, 34rem); height: auto; margin-top: 24px; border-radius: 6px; }
 
 .aboutUS { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center; padding: 64px 0; border-top: 1px solid var(--border); }

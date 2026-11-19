@@ -1,11 +1,36 @@
 {
   "source": "Katalog_Cup-and-Cake_2026-27.pdf",
   "categories": [
+    { "id": "baeren-cupcakes", "de": "Bären-Cupcakes", "en": "Bear Cupcakes" },
     { "id": "klassiker", "de": "Klassiker & Lieblinge", "en": "Classics & Favourites" },
     { "id": "spezialitaeten", "de": "Unsere Spezialitäten", "en": "Our Specialities" },
     { "id": "backkurse", "de": "Rund ums Backen", "en": "Baking Classes" }
   ],
   "items": [
+    {
+      "id": "arcticVanilla", "category": "baeren-cupcakes", "price": 6.9, "vat": null, "allergens": ["G"], "enquiry": true,
+      "image": "Bilder/BaerenCupcakes/arctic-vanilla.webp",
+      "name": { "de": "Eisbären-Cupcake „Arctic Vanilla“", "en": "Polar Bear Cupcake “Arctic Vanilla”" },
+      "description": { "de": "Fluffiger Vanille-Cupcake mit Frischkäse-Frosting und Eisbären-Ohren aus weißer Schokolade, regional und mit Ökostrom gebacken.", "en": "Fluffy vanilla cupcake with cream cheese frosting and white chocolate polar bear ears, baked locally using renewable electricity." },
+      "donation": { "de": "Von jedem verkauften Cupcake (6,90 €) spenden wir 1 € an ein Klimaschutzprojekt zum Erhalt der arktischen Lebensräume.", "en": "For every cupcake sold (€6.90), we donate €1 to a climate protection project that helps preserve Arctic habitats." },
+      "allergenNote": { "de": "Weitere Allergene bitte vor der Bestellung erfragen.", "en": "Please ask about other allergens before ordering." }
+    },
+    {
+      "id": "forestChoco", "category": "baeren-cupcakes", "price": 6.9, "vat": null, "allergens": ["H"], "enquiry": true,
+      "image": "Bilder/BaerenCupcakes/forest-choco.webp",
+      "name": { "de": "Braunbär-Cupcake „Forest Choco“", "en": "Brown Bear Cupcake “Forest Choco”" },
+      "description": { "de": "Saftiger Schoko-Nuss-Muffin mit knackigen Haselnussstückchen und süßem Braunbären-Gesicht, mit Fairtrade-Kakao und ohne Palmöl.", "en": "Moist chocolate and nut muffin with crunchy hazelnut pieces and a cute brown bear face, made with Fairtrade cocoa and without palm oil." },
+      "donation": { "de": "Von jedem verkauften Muffin (6,90 €) fließt 1 € direkt in Aufforstungsprojekte gegen die Abholzung wertvoller Wälder.", "en": "For every muffin sold (€6.90), €1 goes directly to reforestation projects that combat the loss of valuable forests." },
+      "allergenNote": { "de": "Weitere Allergene bitte vor der Bestellung erfragen.", "en": "Please ask about other allergens before ordering." }
+    },
+    {
+      "id": "bambooMatchaChoco", "category": "baeren-cupcakes", "price": 6.9, "vat": null, "allergens": [], "enquiry": true,
+      "image": "Bilder/BaerenCupcakes/bamboo-matcha-choco.webp",
+      "name": { "de": "Panda-Cupcake „Bamboo Matcha-Choco“", "en": "Panda Cupcake “Bamboo Matcha-Choco”" },
+      "description": { "de": "Außergewöhnlicher Schoko-Vanille-Cupcake mit zartgrünem Matcha- oder Schoko-Frosting und niedlichem Panda-Dekor, aus Bio-Zutaten und ohne Lebensmittelverschwendung gebacken.", "en": "An unusual chocolate and vanilla cupcake with pale green matcha or chocolate frosting and a cute panda decoration, baked with organic ingredients and without wasting food." },
+      "donation": { "de": "Von jedem verkauften Cupcake (6,90 €) spenden wir 1 € an Artenschutzprojekte für bedrohte Tierarten und ihre Lebensräume.", "en": "For every cupcake sold (€6.90), we donate €1 to conservation projects that protect endangered animals and their habitats." },
+      "allergenNote": { "de": "Allergene bitte vor der Bestellung erfragen.", "en": "Please ask about allergens before ordering." }
+    },
     {
       "id": "redVelvet", "category": "klassiker", "price": 5.9, "vat": 10, "allergens": ["A", "C", "G"],
       "name": { "de": "Red Velvet Cupcake", "en": "Red Velvet Cupcake" },
