@@ -38,6 +38,21 @@ body.homepage main { width: 100%; margin: 0; }
 .cupcake p { font-size: .9rem; line-height: 1.85; color: var(--muted); margin: 0 0 24px; }
 .mehrErfahren { display: inline-flex; align-items: center; gap: 12px; font-size: .8rem; font-weight: 600; border-bottom: 1px solid #233e3540; padding-bottom: 5px; margin-top: auto; }
 .mehrErfahren svg { width: 16px; height: 16px; }
+
+.bear-cupcake-post {
+    margin: 0 0 clamp(40px, 6vw, 64px);
+    padding: clamp(20px, 5vw, 56px);
+    background: var(--mint);
+    border-radius: 6px;
+    scroll-margin-top: 32px;
+}
+.bear-cupcake-post > * { max-width: 40rem; margin-inline: auto; }
+.bear-cupcake-post h2 { font-size: clamp(1.9rem, 4vw, 2.75rem); }
+.bear-cupcake-post p, .bear-cupcake-post ul { margin-block: 0 1rem; }
+.bear-cupcake-post ul { padding-inline-start: 1.3rem; }
+.bear-cupcake-post li + li { margin-top: .55rem; }
+.bear-cupcake-post img { display: block; width: min(100%, 34rem); height: auto; margin-top: 24px; border-radius: 6px; }
+
 .aboutUS { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center; padding: 64px 0; border-top: 1px solid var(--border); }
 .aboutUSText { padding: 0; background: transparent; min-width: 0; }
 .aboutUS h1, .aboutUS h2 { font-size: 3rem; margin: 0 0 26px; }
